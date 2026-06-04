@@ -30,6 +30,11 @@ blockquote{
 	margin: 1em 2.5em;
 }
 
+h1{
+	margin: 3em 0;
+	text-align: center;
+}
+
 h1,
 h2,
 h3,
@@ -42,8 +47,6 @@ hgroup{
 	font-variant: small-caps;
 	hyphens: none;
 	-epub-hyphens: none;
-	margin: 3em 0;
-	text-align: center;
 }
 
 /* simulate h3 in an hgroup */
@@ -141,7 +144,6 @@ header{
 	break-inside: avoid;
 	hyphens: none;
 	-epub-hyphens: none;
-	text-align: center;
 }
 
 header > * + p{
