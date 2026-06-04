@@ -51,7 +51,8 @@ hgroup{
 
 /* simulate h3 in an hgroup */
 hgroup h2 + p{
-	font-size: 1.17em;
+	font-size: 2em;
+  font-weight: bold;
 }
 
 /* simulate h4 in an hgroup */

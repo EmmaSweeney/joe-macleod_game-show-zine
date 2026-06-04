@@ -2,9 +2,16 @@
 @namespace epub "http://www.idpf.org/2007/ops";
 
 #foreword p,
+#article-3 p,
 #article-4 p,
-[epub|type~="z3998:letter"] p{
+[epub|type~="z3998:letter"] p,
+[epub|type~="acknowledgments"] p{
 	text-indent: 0;
+}
+
+#article-3 p + p,
+[epub|type~="acknowledgments"] p + p{
+	margin-top: 1em;
 }
 
 /* Article headers */
@@ -14,8 +21,10 @@
 	text-transform: uppercase;
 }
 
-p[epub|type~="contributors"] + p{
+p[epub|type~="contributors"] + p,
+#article-4 h2 + p{
   font-weight: bold;
+  text-align: initial;
 }
 /* Image */
 figure{
@@ -71,7 +80,8 @@ section[epub|type~="titlepage"] div{
 /* End titlepage */
 
 /* Foreword */
-section#foreword{
+section[epub|type~="foreword"],
+section[epub|type~="acknowledgments"]{
 	margin-top: 20vh;
 }
 
@@ -85,7 +95,14 @@ section#foreword{
 }
 /* End foreword */
 
-/* Questions */
+/* Article 3 */
+#article-3 b{
+	font-variant: normal;
+  font-weight: bold;
+}
+/* End article 3 */
+
+/* Article 4 */
 #article-4 header{
 	text-align: center;
 }
@@ -95,4 +112,15 @@ section#foreword{
   list-style-type: disc;
   max-width: 80%;
 }
-/* End questions */
+/* End article 4 */
+
+/* Acknowledgments */
+[epub|type~="acknowledgments"] header p{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+[epub|type~="acknowledgments"] *{
+  font-weight: bold;
+}
+/* End acknowledgments */
