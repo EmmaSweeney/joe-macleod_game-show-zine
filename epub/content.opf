@@ -81,6 +81,7 @@
 	<spine>
 		<itemref idref="titlepage.xhtml"/>
 		<itemref idref="copyright.xhtml"/>
+		<itemref idref="acknowledgments.xhtml"/>
 		<itemref idref="frontispiece.xhtml"/>
 		<itemref idref="foreword.xhtml"/>
 		<itemref idref="halftitlepage.xhtml"/>
@@ -88,6 +89,5 @@
 		<itemref idref="article-2.xhtml"/>
 		<itemref idref="article-3.xhtml"/>
 		<itemref idref="article-4.xhtml"/>
-		<itemref idref="acknowledgments.xhtml"/>
 	</spine>
 </package>
