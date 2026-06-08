@@ -5,11 +5,14 @@
 		<dc:date>1900-01-01T00:00:00Z</dc:date>
 		<meta property="dcterms:modified">1900-01-01T00:00:00Z</meta>
 		<dc:rights>RIGHTS</dc:rights>
-		<dc:publisher id="publisher">PUBLISHER_NAME</dc:publisher>
-		<meta property="file-as" refines="#publisher">PUBLISHER_SORT</meta>
-		<meta property="se:url.homepage" refines="#publisher">PUBLISHER_URL</meta>
+		<dc:publisher id="publisher">Flaming Hydra</dc:publisher>
+		<meta property="file-as" refines="#publisher">Flaming Hydra</meta>
+		<meta property="se:url.homepage" refines="#publisher">https://flaminghydra.com/books</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">mdc</meta>
+		<meta property="role" refines="#publisher" scheme="marc:relators">pbl</meta>
 		<link href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa" rel="dcterms:conformsTo"/>
-		<meta property="a11y:certifiedBy">PUBLISHER_NAME</meta>
+		<meta property="a11y:certifiedBy">Flaming Hydra</meta>
 		<meta property="schema:accessMode">textual</meta>
 		<meta property="schema:accessMode">visual</meta>
 		<meta property="schema:accessModeSufficient">textual</meta>
@@ -22,26 +25,18 @@
 		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
 		<dc:title id="title">Game Show Zine</dc:title>
 		<meta property="file-as" refines="#title">Game Show Zine</meta>
-		<dc:subject id="subject-1">SUBJECT_1</dc:subject>
-		<dc:subject id="subject-2">SUBJECT_2</dc:subject>
-		<meta property="authority" refines="#subject-1">LCSH</meta>
-		<meta property="term" refines="#subject-1">SUBJECT_1_LCSH_ID</meta>
-		<meta property="authority" refines="#subject-2">LCSH</meta>
-		<meta property="term" refines="#subject-2">SUBJECT_2_LCSH_ID</meta>
 		<dc:description id="description">DESCRIPTION</dc:description>
 		<dc:language>en-US</dc:language>
 		<dc:creator id="author">Joe MacLeod</dc:creator>
 		<meta property="file-as" refines="#author">MacLeod, Joe</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
-		<dc:contributor id="artist">COVER_ARTIST_NAME</dc:contributor>
-		<meta property="file-as" refines="#artist">COVER_ARTIST_SORT</meta>
-		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">COVER_ARTIST_WIKI_URL</meta>
-		<meta property="se:url.authority.nacoaf" refines="#artist">COVER_ARTIST_NACOAF_URI</meta>
-		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
-		<dc:contributor id="producer-1">PRODUCER_NAME</dc:contributor>
-		<meta property="file-as" refines="#producer-1">PRODUCER_SORT</meta>
-		<meta property="se:url.homepage" refines="#producer-1">PRODUCER_URL</meta>
-		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
+		<dc:contributor id="cover-designer">COVER_DESIGNER</dc:contributor>
+		<meta property="file-as" refines="#cover-designer">COVER_DESIGNER</meta>
+		<meta property="role" refines="#cover-designer" scheme="marc:relators">cov</meta>
+		<dc:contributor id="editor">Maria Bustillos</dc:contributor>
+		<meta property="file-as" refines="#editor">Bustillos, Maria</meta>
+		<meta property="se:url.homepage" refines="#editor">https://mariabustillos.com/</meta>
+		<meta property="role" refines="#editor" scheme="marc:relators">edt</meta>
 	</metadata>
 	<manifest>
 		<item href="css/core.css" id="core.css" media-type="text/css"/>
